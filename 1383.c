@@ -11,7 +11,6 @@ Uso de IA   : Não
 #include <stdio.h>
 
 int RESOLVER9X9(int matriz[9][9]){
-    int x, y, i;
     for (int x = 0; x<9; x++){
         for(int y = 0; y<9; y++){
             for(int i = 0; i<9; i++){
@@ -55,17 +54,17 @@ int main() {
     int  n;
     int matriz[9][9];
     scanf("%d", &n);
-    for(int i = 0; i < n; i++) {
+    for(int x = 0; x < n; x++) {
         for(int i = 0 ; i < 9; i++) {
-            for(int j = 0; j<9; j++) {
+            for(int j = 0; j< 9; j++) {
                 scanf("%d", &matriz[i][j]);
             }
         }
         if(RESOLVER3X3(matriz) && RESOLVER9X9(matriz)) {
-            printf("Instancia %d\nSIM\n\n", i + 1);
+            printf("Instancia %d\nSIM\n\n", x + 1);
         }
         else {
-            printf("Instancia %d\nNAO\n\n", i + 1);
+            printf("Instancia %d\nNAO\n\n", x + 1);
         }
     }
     return 0;
