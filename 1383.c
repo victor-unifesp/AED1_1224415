@@ -10,7 +10,7 @@ Uso de IA   : Não
 -------------------------------------------------------------------------- */
 #include <stdio.h>
 
-int RESOLVER3X3(int matriz[9][9]){
+int RESOLVER9X9(int matriz[9][9]){
     int x, y, i;
     for (int x = 0; x<9; x++){
         for(int y = 0; y<9; y++){
@@ -31,7 +31,7 @@ int RESOLVER3X3(int matriz[9][9]){
     return 1;
 }
 
-int RESOLVER9X9(int matriz[9][9]){
+int RESOLVER3X3(int matriz[9][9]){
     int c, l, i, j, bl, bc;
     for(bl=0; bl<9; bl+=3){
        for(bc=0;bc<9;bc+=3){
