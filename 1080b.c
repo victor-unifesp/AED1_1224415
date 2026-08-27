@@ -12,10 +12,11 @@ Uso de IA   : Não
 #include <stdlib.h>
 
 int main() {
-    int i = 100;
-    int *n= (int *) malloc(i * sizeof(int));
+    int j = 100;
+    int *n= (int *) malloc(j * sizeof(int));
+    if (n == NULL) return 1;
     int maior;
-    int posicao;
+    int posicao=0;
     scanf("%d", &n[0]);
     maior = n[0];
     for(int i = 1; i<100; i++) {
