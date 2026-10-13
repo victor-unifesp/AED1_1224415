@@ -18,22 +18,6 @@ struct cel {
 };
 typedef struct cel cel;
 
-void Libera(cel* cabeca) {
-
-	cel* atual=cabeca->prox;
-
-	cel* liberado;
-
-	while(atual!=NULL) {
-		liberado=atual;
-		atual=atual->prox;
-		free(liberado);
-	}
-
-	cabeca->prox=NULL;
-
-}
-
 void Inserecomeco(cel *cabeca, char c) {
 
     cel* novo = (cel*)malloc(sizeof(cel));
