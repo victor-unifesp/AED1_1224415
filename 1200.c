@@ -8,7 +8,6 @@ Objetivo    : Escrever e fazer comandos em uma árvore
 Dificuldade : impressão correta do output
 Uso de IA   : Localização de erros
 -------------------------------------------------------------------------- */
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -142,6 +141,6 @@ int main() {
             Busca(valor, raiz);
         }
     }
-
+    LiberaArvore(raiz);
     return 0;
 }
