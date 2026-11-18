@@ -2,11 +2,11 @@
 Disciplina  : Algortimo e Estrutura de Dados 2026S1
 Nome        : Victor da Veiga Amaral Lopes
 Linguagem   : C
-Problema    : https://judge.beecrowd.com/pt/problems/view/1200
-Data        : 27/10/2026
-Objetivo    : Imprimir uma árvore por largura
-Dificuldade : impressão correta do output
-Uso de IA   : Localização de erros, aprendizado da função PorNivel
+Problema    : https://judge.beecrowd.com/pt/problems/view/1610
+Data        : 18/11/2026
+Objetivo    : Identificar a existência de ciclos em um grafo direcionado
+Dificuldade : Implementação da DFS e identificação de ciclos
+Uso de IA   : Aprendizado da DFS e localização de erros
 -------------------------------------------------------------------------- */
 
 #include <stdio.h>
